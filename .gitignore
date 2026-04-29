@@ -23,6 +23,7 @@ build/
 *.bridgesupport
 build-iPhoneOS/
 build-iPhoneSimulator/
+.DS_store/
 
 ## Specific to RubyMotion (use of CocoaPods):
 #
