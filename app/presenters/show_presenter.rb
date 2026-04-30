@@ -11,13 +11,14 @@ class ShowCardBuilder
     [
       "🎬 #{show.name}",
       "⭐ #{show.rating || "—"}",
+      "🎭 #{show.genres.join(' / ') || "-"}",
       "",
       shorten(show.summary)
     ].join("\n")
   end
 
   def self.shorten(text)
-    return "Нет описания" unless text
+    return "No description" unless text
     text.length > 300 ? text[0..300] + "..." : text
   end
 end
